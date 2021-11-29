@@ -1,0 +1,11 @@
+# This document is about running command remotely
+
+ssh user@sm2 hostname
+ssh user@sm2 "hostname; ip -c -br a"
+
+cat bashFile.sh
+	#!/bin/bash
+
+	hostname
+	ip -c -br a
+ssh user@sm2 < bashFile.sh 
